@@ -1,7 +1,8 @@
-
 openai
 langchain
+langchain_openai
 bs4
 python-dotenv
 pydantic
 tiktoken
+streamlit

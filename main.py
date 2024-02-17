@@ -2,10 +2,10 @@
 import os
 from dotenv import load_dotenv
 
-from langchain import PromptTemplate
-from langchain.agents import initialize_agent, Tool
+from langchain.prompts import PromptTemplate
+from langchain.agents import initialize_agent, Tool, create_structured_chat_agent
 from langchain.agents import AgentType
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.prompts import MessagesPlaceholder
 from langchain.memory import ConversationSummaryBufferMemory
 from langchain.text_splitter import RecursiveCharacterTextSplitter
